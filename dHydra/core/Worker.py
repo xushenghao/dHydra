@@ -13,6 +13,7 @@ import logging
 import redis
 import pymongo
 import json
+from datetime import datetime
 # from dHydra.core.Globals import *
 # from dHydra.core.Functions import *
 # from dHydra.app import PRODUCER_NAME, PRODUCER_HASH
@@ -35,6 +36,7 @@ class Worker(multiprocessing.Process):
 		self.__description__ = description
 		self.__heart_beat_interval__ = heart_beat_interval
 		self.__threads__ = dict()	# 被监控的线程
+		self.redis_key = "dHydra.Worker."+self.__class__.__name__+"."+self.__name__+"."
 		"""
 		self.__threads__ = {
 			"description"	: "该线程功能备注说明",
@@ -42,7 +44,6 @@ class Worker(multiprocessing.Process):
 			"target"		: "该线程的target"
 			"restart_mode"	: "重启模式，可以为 manual/auto/remove;manual则代表允许管理员发送命令手工重启线程,auto则一旦线程关闭立即自动开启，remove则代表一旦线程结束就从监控列表移除",
 			"restart_func"	: "自动/手动重启时调用的方法",
-
 		}
 		"""
 		self.logger = self.get_logger( level = log_level )
@@ -53,31 +54,66 @@ class Worker(multiprocessing.Process):
 
 	def __auto_restart_thread__( self ):
 		# Worker内置的默认自动重启线程方法
+		pass
 
-	def command_handler(self, cli):
-		# cli
+	def __command_handler__(self, msg_command):
+		# cli is a dict with the following structure:
+		"""
+		msg_command = {
+			"type"	:		"sys/customized",
+			"operation"	:	"operation_name",
+			"kwargs"	:	"suppose that the operation is a function, we need to pass some arguments",
+			"token"		:	"the token is used to verify the authentication of the operation"
+		}
+		"""
+		pass
 
 
 	def monitor_add_thread( self, thread, description = "No Description", restart_mode = "manual", restart_func = self.__auto_restart_thread__ ):
 		# 将该线程加入管理员监控范围
+		pass
 
 	def monitor_remove_thread(self, thread):
 		# 取消管理员对线程thread的监控
+		pass
 
 	def check_prerequisites(self):
 		"""
 		检查是否满足开启进程的条件
 		"""
 		# 检测redis, mongodb连接
-
+		try:
+			self.redis_conn = redis.Redis()
+			self.redis_conn.client_list()
+		except redis.ConnectionError:
+			self.logger.error("Cannot connect to redis")
+			return False
+		self.mongo = V("DB").get_mongodb()
+		if self.mongo is False:
+			self.logger.error("Cannot connect to mongodb")
+			return False
 		# 如果是单例，检测是否重复开启
 		return True
+
+	def __thread_listen_command__(self):
+		#
+		self.command_listener = self.redis_conn.pubsub()
+		channel_name = self.redis_key + "Command"
+		self.command_listener.subscribe( [channel_name] )
+		while True:
+			msg_command = self.command_listener.get_message()
+			if msg_command:
+				self.__command_handler__(msg_command)
+			else:
+				time.sleep(0.01)
 
 	def __heart_beat__(self):
 		# 心跳线程
 		while True:
+			# flush status infomation to redis
+			status = dict()
+			status["heart_beat"] = datetime.now()
 			time.sleep(self.__heart_beat_interval__)
-
 
 	def run(self):
 		"""
@@ -87,13 +123,25 @@ class Worker(multiprocessing.Process):
 		self.__thread_heart_beat__ = threading.Thread( target = self.__heart_beat__ )
 		self.__thread_heart_beat__.setDaemon(True)
 		self.monitor_add_thread( thread = self.__thread_heart_beat__, description = "Heart Beat", restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
-		self.__thread_heart_beat__.start( restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
+		self.__thread_heart_beat__.start()
 
 		# 开启监听命令线程
-		self.__thread_listen_command__ = threading.Thread( target =  )
+		self.__thread_listen_command__ = threading.Thread( target = self.__listen_command__ )
+		self.__thread_listen_command__.setDaemon(True)
+		self.monitor_add_thread( thread = self.__thread_listen_command__, description = "Listening Command Channel", restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
+		self.__thread_listen_command__.start()
 
 		# 检查初始化设置，按需开启
 		#### PUB线程
+		self.__thread_pub__ = threading.Thread( target = self.__producer__ )
+		self.__thread_pub__.setDaemon(True)
+		self.monitor_add_thread( thread = self.__thread_pub__, description = "DATA PUBLISHER", restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
+		self.__thread_pub__.start()
+
+		#### LISTENER
+		self.__thread_sub__ = threading.Thread( target = self.__consumer__ )
+		self.__thread_sub__.setDaemon(True)
+		self.__thread_sub__.start()
 
 	def get_logger(self, level):
 		logger = logging.getLogger(self.__class__.__name__)
@@ -119,23 +167,20 @@ class Worker(multiprocessing.Process):
 		# Step 1 : 检查Worker是否存在
 		# Step 2 : 检查Worker是否开启
 
+	def msg_listener(self):
+		while True:
+			msg = self.listener.get_message()
+			if msg:
+				self.handler(msg)
+			else:
+				time.sleep(0.001)
 
 	def unsubscribe(self, worker_name):
 		"""
 		退订Worker
 		"""
-
-
-
-	def _end(self):
-		for producer in list(self._producers):
-			producer._remove_subscriber(self._queue)
-		self.logger.info('[结束Action]\t{}'.format( self._name ) )
-
-	def _stop(self):
-		self._running = False
+		pass
 
 	# 需要在子类中重写的数据处理方法
-	def handler(self, event):
-		print( "event.data: {}".format( event.data ) )
+	def handler(self, msg):
 		return
