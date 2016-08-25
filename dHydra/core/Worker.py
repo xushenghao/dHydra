@@ -38,7 +38,7 @@ class Worker(multiprocessing.Process):
 		self.__stop_info__ = None		#
 		self.__stop_time__ = None		#
 		self.__status__ = "init"		# "init", "error_exit", "suspended", "user_stopped", "normal"
-		self.redis_key = "dHydra.Worker."+self.__class__.__name__+"."+self.__name__+"."
+		self.redis_key = "dHydra.Worker."+self.__class__.__name__+"."+self.__nickname__+"."
 		self.channel_pub = self.redis_key + "Pub"
 		"""
 		self.__threads__ = {
@@ -91,6 +91,7 @@ class Worker(multiprocessing.Process):
 			self.redis = redis.Redis(host = '127.0.0.1', port = 6379)
 			self.redis.client_list()
 			self.__listener__ = self.redis.pubsub()
+			self.__listener__.subscribe(["dHydra"])
 		except redis.ConnectionError:
 			self.logger.error("Cannot connect to redis")
 			return False
@@ -201,7 +202,7 @@ class Worker(multiprocessing.Process):
 		订阅Worker
 		"""
 		# Step 1 : 检查Worker是否存在
-		if nick_name is None:
+		# if nick_name is None:
 			# find the worker_name
 		# Step 2 : 检查Worker是否开启
 
