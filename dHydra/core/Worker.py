@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Action类
-每个Action自带一个Queue
-Created on 03/30/2016
+Worker抽象类
 @author: Wen Gu
 @contact: emptyset110@gmail.com
 """
@@ -13,12 +11,8 @@ import logging
 import redis
 import pymongo
 import json
+from dHydra.console import *
 from datetime import datetime
-# from dHydra.core.Globals import *
-# from dHydra.core.Functions import *
-# from dHydra.app import PRODUCER_NAME, PRODUCER_HASH
-# import dHydra.core.ThreadManager as ThreadManager
-# import dHydra.core.util as util
 from abc import ABCMeta
 
 class Worker(multiprocessing.Process):
@@ -35,7 +29,8 @@ class Worker(multiprocessing.Process):
 		self.__singleton__ = singleton
 		self.__description__ = description
 		self.__heart_beat_interval__ = heart_beat_interval
-		self.__threads__ = dict()	# 被监控的线程
+		self.__threads__ = dict()		# 被监控的线程
+		self.__data_feeder__ = set()	# 本Worker订阅的内容
 		self.redis_key = "dHydra.Worker."+self.__class__.__name__+"."+self.__name__+"."
 		"""
 		self.__threads__ = {
@@ -69,7 +64,7 @@ class Worker(multiprocessing.Process):
 		pass
 
 
-	def monitor_add_thread( self, thread, description = "No Description", restart_mode = "manual", restart_func = self.__auto_restart_thread__ ):
+	def monitor_add_thread( self, thread, description = "No Description", restart_mode = "manual", restart_func = None ):
 		# 将该线程加入管理员监控范围
 		pass
 
@@ -83,7 +78,7 @@ class Worker(multiprocessing.Process):
 		"""
 		# 检测redis, mongodb连接
 		try:
-			self.redis_conn = redis.Redis()
+			self.redis_conn = redis.Redis(host = '127.0.0.1', port = 6379)
 			self.redis_conn.client_list()
 		except redis.ConnectionError:
 			self.logger.error("Cannot connect to redis")
@@ -95,7 +90,7 @@ class Worker(multiprocessing.Process):
 		# 如果是单例，检测是否重复开启
 		return True
 
-	def __thread_listen_command__(self):
+	def __listen_command__(self):
 		#
 		self.command_listener = self.redis_conn.pubsub()
 		channel_name = self.redis_key + "Command"
@@ -113,35 +108,47 @@ class Worker(multiprocessing.Process):
 			# flush status infomation to redis
 			status = dict()
 			status["heart_beat"] = datetime.now()
+			print(status)
 			time.sleep(self.__heart_beat_interval__)
+
+	def __producer__(self):
+		pass
+
+	def __consumer__(self):
+		pass
 
 	def run(self):
 		"""
 		初始化Worker
 		"""
+		self.daemon = True
 		# 开启心跳线程，并且加入线程监控
 		self.__thread_heart_beat__ = threading.Thread( target = self.__heart_beat__ )
 		self.__thread_heart_beat__.setDaemon(True)
-		self.monitor_add_thread( thread = self.__thread_heart_beat__, description = "Heart Beat", restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
+		self.monitor_add_thread( thread = self.__thread_heart_beat__, description = "Heart Beat", restart_mode = "auto", restart_func = self.__auto_restart_thread__ )
 		self.__thread_heart_beat__.start()
 
 		# 开启监听命令线程
 		self.__thread_listen_command__ = threading.Thread( target = self.__listen_command__ )
 		self.__thread_listen_command__.setDaemon(True)
-		self.monitor_add_thread( thread = self.__thread_listen_command__, description = "Listening Command Channel", restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
+		self.monitor_add_thread( thread = self.__thread_listen_command__, description = "Listening Command Channel", restart_mode = "auto", restart_func = self.__auto_restart_thread__ )
 		self.__thread_listen_command__.start()
 
 		# 检查初始化设置，按需开启
 		#### PUB线程
 		self.__thread_pub__ = threading.Thread( target = self.__producer__ )
 		self.__thread_pub__.setDaemon(True)
-		self.monitor_add_thread( thread = self.__thread_pub__, description = "DATA PUBLISHER", restart_mode = "auto", restart_func = self.__thread_auto_restart__ )
+		self.monitor_add_thread( thread = self.__thread_pub__, description = "DATA PUBLISHER", restart_mode = "auto", restart_func = self.__auto_restart_thread__ )
 		self.__thread_pub__.start()
 
 		#### LISTENER
 		self.__thread_sub__ = threading.Thread( target = self.__consumer__ )
 		self.__thread_sub__.setDaemon(True)
+		self.monitor_add_thread( thread = self.__thread_sub__, description = "DATA CONSUMER", restart_mode = "auto", restart_func = self.__auto_restart_thread__ )
 		self.__thread_sub__.start()
+
+		while True:
+			time.sleep(10)
 
 	def get_logger(self, level):
 		logger = logging.getLogger(self.__class__.__name__)
@@ -158,7 +165,6 @@ class Worker(multiprocessing.Process):
 		else:
 			logger.setLevel(20)
 		return logger
-
 
 	def subscribe(self, worker_name):
 		"""
