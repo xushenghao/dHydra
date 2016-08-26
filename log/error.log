@@ -208,3 +208,20 @@ Traceback (most recent call last):
     with open(path, "rb") as f:
 FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
 2016-08-26 17:05:37,954 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 18.95ms
+2016-08-27 06:37:01,863 - tornado.application - 1524 - ERROR - Uncaught exception GET /Worker/Monitor/a (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/Worker/Monitor/a', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Upgrade-Insecure-Requests': '1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 39, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/templates/a.html'
+2016-08-27 06:37:01,869 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/a (127.0.0.1) 6.86ms

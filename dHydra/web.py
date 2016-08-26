@@ -19,7 +19,6 @@ class IndexHandler(tornado.web.RequestHandler):
 		application = self.application
 		# kwargs = self.kwargs
 		uri = self.request.uri
-		print("This is IndexHandler")
 
 	def get(self, *args ):
 		self.render( "index.html" )
@@ -67,12 +66,22 @@ def make_app():
 	"""
 	return tornado.web.Application([
 		# (r"/favicon.ico", tornado.web.StaticFileHandler, { "path": os.getcwd() + "/static/" } ),
-		(r"/static/js/(.*)", tornado.web.StaticFileHandler,  { "path": os.getcwd() + "/static/js/" } ),
-		(r"/static/css/(.*)", tornado.web.StaticFileHandler,  { "path": os.getcwd() + "/static/css/" } ),
 		(r"/", IndexHandler),
+		(r"/public/js/(.*)", tornado.web.StaticFileHandler,  { "path": os.getcwd() + "/public/js/" } ),
+		(r"/public/css/(.*)", tornado.web.StaticFileHandler,  { "path": os.getcwd() + "/public/css/" } ),
+		(r"/public/fonts/(.*)", tornado.web.StaticFileHandler,  { "path": os.path.split(os.path.realpath(__file__))[0] + "/public/fonts/" } ),
+		(r"/static/js/(.*)", tornado.web.StaticFileHandler,  { "path": os.path.split(os.path.realpath(__file__))[0] + "/static/js/" } ),
+		(r"/static/css/(.*)", tornado.web.StaticFileHandler,  { "path": os.path.split(os.path.realpath(__file__))[0] + "/static/css/" } ),
+		(r"/static/fonts/(.*)", tornado.web.StaticFileHandler,  { "path": os.path.split(os.path.realpath(__file__))[0] + "/static/fonts/" } ),
 		(r"/api/Worker/(.*)/(.*)/", ApiHandler),	# ClassName, MethodName
-		(r"/Worker/(.*)/(.*)", WorkerHandler)
+		(r"/Worker/(.*)/(.*)", WorkerHandler)		# ClassName, TemplateName
     ])
+
+def start_server(port = 5000):
+	app = make_app()
+	app.listen(port)
+	print("Listening on port: 127.0.0.1:5000")
+	tornado.ioloop.IOLoop.current().start()
 
 if __name__ == "__main__":
 	app = make_app()

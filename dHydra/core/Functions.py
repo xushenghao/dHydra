@@ -18,10 +18,14 @@ import traceback
 def get_workers():
 	candidates = set( os.listdir("./Worker") ) | set( os.listdir( os.path.split(os.path.realpath(__file__))[0][:-4]+"Worker" ) )
 	candidates = list(candidates)
-	for i in candidates:
-		item
-	return candidates
+	workers = list()
+	for item in candidates:
+		if ( item[0] >= "A" and item[0] <= "Z" ):
+			workers.append(item)
+	return workers
 
+def get_workers_info():
+	pass
 
 """
 动态加载web controller

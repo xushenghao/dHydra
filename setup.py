@@ -75,8 +75,6 @@ setup(
 ,	entry_points='''
 				[console_scripts]
 				hail=dHydra.hail:hail
-				start=dHydra.hail:start
-				terminate=dHydra.hail:terminate
 				'''
 ,	keywords = KEYWORDS
 ,	author = AUTHOR
