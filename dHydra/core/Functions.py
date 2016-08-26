@@ -14,8 +14,30 @@ from dHydra.app import PRODUCER_NAME, PRODUCER_HASH
 import os
 import logging
 import traceback
-# print("加载：Functions.py")
 
+def get_workers():
+	candidates = set( os.listdir("./Worker") ) | set( os.listdir( os.path.split(os.path.realpath(__file__))[0][:-4]+"Worker" ) )
+	candidates = list(candidates)
+	for i in candidates:
+		item
+	return candidates
+
+
+"""
+动态加载web controller
+"""
+def get_controller_method(class_name, method):
+	logger = logging.getLogger("Functions")
+	# get instance of controller
+	if os.path.exists(os.getcwd()+"/worker/" + class_name +"/" + "Controller.py"):
+		func = getattr(importlib.import_module("worker."+class_name+".Controller"), method)
+		return func
+	else:
+		try:
+			func = getattr(importlib.import_module("dHydra.worker."+class_name+".Controller"), method)
+			return func
+		except Exception as e:
+			return False
 
 """
 V方法，动态加载数据API类

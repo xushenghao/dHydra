@@ -1,0 +1,346 @@
+2016-08-26 13:56:17,835 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 14.82ms
+2016-08-26 13:56:18,104 - tornado.access - 1946 - INFO - 200 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 186.62ms
+2016-08-26 13:56:18,134 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 27.18ms
+2016-08-26 13:56:18,140 - tornado.access - 1946 - INFO - 200 GET /static/js/typed.js (127.0.0.1) 4.62ms
+2016-08-26 13:56:18,596 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.76ms
+2016-08-26 13:57:59,909 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.58ms
+2016-08-26 13:58:00,066 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 24.91ms
+2016-08-26 14:01:28,747 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 16.46ms
+2016-08-26 14:01:28,853 - tornado.access - 1946 - WARNING - 404 GET /static/css/semantic.min.css (127.0.0.1) 2.52ms
+2016-08-26 14:01:28,912 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 24.46ms
+2016-08-26 14:02:23,074 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.79ms
+2016-08-26 14:02:23,249 - tornado.access - 1946 - INFO - 200 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 42.63ms
+2016-08-26 14:04:02,817 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.32ms
+2016-08-26 14:04:02,897 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 2.52ms
+2016-08-26 14:05:18,033 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 16.73ms
+2016-08-26 14:10:21,660 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.49ms
+2016-08-26 14:10:21,814 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 32.47ms
+2016-08-26 14:21:43,150 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 19.13ms
+2016-08-26 14:21:43,256 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 26.82ms
+2016-08-26 14:23:47,494 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 15.12ms
+2016-08-26 14:25:37,375 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 13.82ms
+2016-08-26 14:25:37,487 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 30.75ms
+2016-08-26 14:26:47,608 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 15.19ms
+2016-08-26 14:26:47,774 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 27.65ms
+2016-08-26 14:27:10,722 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.84ms
+2016-08-26 14:27:36,302 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 19.91ms
+2016-08-26 14:29:52,596 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 10.31ms
+2016-08-26 14:29:52,721 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 28.98ms
+2016-08-26 14:30:50,813 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 11.36ms
+2016-08-26 14:39:06,456 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.83ms
+2016-08-26 14:39:06,589 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 24.94ms
+2016-08-26 14:41:21,341 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.98ms
+2016-08-26 14:42:55,779 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.24ms
+2016-08-26 14:43:39,618 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.66ms
+2016-08-26 14:44:07,479 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 3.25ms
+2016-08-26 14:44:07,654 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 27.70ms
+2016-08-26 14:45:16,225 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.11ms
+2016-08-26 14:46:44,580 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.27ms
+2016-08-26 14:47:55,169 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 16.34ms
+2016-08-26 14:50:37,373 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 8.55ms
+2016-08-26 14:50:37,566 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 25.61ms
+2016-08-26 14:51:33,938 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 19.22ms
+2016-08-26 14:54:01,513 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.76ms
+2016-08-26 14:55:58,518 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 18.50ms
+2016-08-26 14:56:22,401 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 2.65ms
+2016-08-26 14:56:22,593 - tornado.access - 1946 - INFO - 200 GET /static/css/bootstrap.min.css (127.0.0.1) 40.88ms
+2016-08-26 14:56:22,616 - tornado.access - 1946 - INFO - 200 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 18.37ms
+2016-08-26 14:56:22,629 - tornado.access - 1946 - INFO - 200 GET /static/js/canvas-nest.min.js (127.0.0.1) 3.63ms
+2016-08-26 14:56:22,638 - tornado.access - 1946 - INFO - 200 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 5.54ms
+2016-08-26 14:56:22,647 - tornado.access - 1946 - INFO - 200 GET /static/js/typed.js (127.0.0.1) 3.01ms
+2016-08-26 14:56:23,789 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.71ms
+2016-08-26 14:58:26,957 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 15.13ms
+2016-08-26 14:58:58,448 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 14.31ms
+2016-08-26 14:59:32,723 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 22.39ms
+2016-08-26 14:59:44,487 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.22ms
+2016-08-26 14:59:53,877 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 12.10ms
+2016-08-26 15:00:44,082 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 13.15ms
+2016-08-26 15:01:23,750 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.74ms
+2016-08-26 15:02:01,464 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 13.15ms
+2016-08-26 15:03:46,481 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 11.80ms
+2016-08-26 15:03:46,648 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 27.14ms
+2016-08-26 15:05:14,278 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 12.00ms
+2016-08-26 15:06:52,515 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 15.32ms
+2016-08-26 15:08:34,208 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 8.99ms
+2016-08-26 15:09:36,948 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.19ms
+2016-08-26 15:10:14,100 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 15.37ms
+2016-08-26 15:10:14,232 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 31.53ms
+2016-08-26 15:10:14,250 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 12.77ms
+2016-08-26 15:10:14,259 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 6.70ms
+2016-08-26 15:10:14,291 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 3.66ms
+2016-08-26 15:10:14,303 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 7.42ms
+2016-08-26 15:10:43,586 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 11.25ms
+2016-08-26 15:11:18,569 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.46ms
+2016-08-26 15:11:25,980 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 12.25ms
+2016-08-26 15:11:26,097 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 29.36ms
+2016-08-26 15:11:26,108 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 5.48ms
+2016-08-26 15:11:26,173 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 2.69ms
+2016-08-26 15:11:26,179 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 2.75ms
+2016-08-26 15:11:26,190 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 3.81ms
+2016-08-26 15:11:50,603 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 15.90ms
+2016-08-26 15:12:47,357 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.42ms
+2016-08-26 15:24:42,290 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 14.46ms
+2016-08-26 15:24:42,418 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 22.73ms
+2016-08-26 15:25:04,218 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 12.58ms
+2016-08-26 15:27:53,907 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 18.58ms
+2016-08-26 15:28:49,497 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 21.58ms
+2016-08-26 15:29:30,011 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 10.81ms
+2016-08-26 15:30:32,783 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 10.85ms
+2016-08-26 15:31:17,416 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 3.15ms
+2016-08-26 15:35:46,909 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.34ms
+2016-08-26 15:35:47,082 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 37.04ms
+2016-08-26 15:36:10,962 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.95ms
+2016-08-26 15:37:42,011 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 13.78ms
+2016-08-26 15:38:25,539 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.45ms
+2016-08-26 15:40:13,052 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.12ms
+2016-08-26 15:41:22,301 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.99ms
+2016-08-26 15:41:46,877 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.73ms
+2016-08-26 15:42:07,691 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 11.29ms
+2016-08-26 15:43:31,916 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 17.50ms
+2016-08-26 15:44:54,661 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 13.41ms
+2016-08-26 15:45:50,200 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 10.74ms
+2016-08-26 15:45:50,288 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 30.51ms
+2016-08-26 15:45:50,309 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 7.10ms
+2016-08-26 15:45:50,353 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 2.61ms
+2016-08-26 15:45:50,368 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 7.48ms
+2016-08-26 15:45:50,389 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 9.67ms
+2016-08-26 15:46:09,283 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 10.39ms
+2016-08-26 15:46:09,403 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 31.80ms
+2016-08-26 15:46:09,414 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 5.52ms
+2016-08-26 15:46:09,460 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 2.94ms
+2016-08-26 15:46:09,485 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 4.14ms
+2016-08-26 15:46:09,516 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 3.37ms
+2016-08-26 15:46:42,316 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 8.67ms
+2016-08-26 15:47:52,833 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 9.40ms
+2016-08-26 15:50:26,042 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 11.41ms
+2016-08-26 15:56:35,484 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.67ms
+2016-08-26 16:03:55,571 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.32ms
+2016-08-26 16:03:55,710 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 34.76ms
+2016-08-26 16:19:44,168 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 13.72ms
+2016-08-26 16:19:44,315 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 25.44ms
+2016-08-26 16:21:36,496 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Upgrade-Insecure-Requests': '1', 'If-None-Match': '"b5c8f6365ea6eebf21ecada2a97607a2314609d2"'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 36, in get
+    print("Action Name: {}".format(name))
+NameError: name 'name' is not defined
+2016-08-26 16:21:36,566 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 71.48ms
+2016-08-26 16:28:28,513 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 790, in render_string
+    template_path = self.get_template_path()
+  File "dHydra/web.py", line 46, in get_template_path
+    if os.path.exists( os.getcwd()+"/worker/" + worker_name + "/templates/index.html" ):
+NameError: name 'worker_name' is not defined
+2016-08-26 16:28:28,520 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index (127.0.0.1) 8.99ms
+2016-08-26 16:28:40,457 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Connection': 'keep-alive', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 790, in render_string
+    template_path = self.get_template_path()
+  File "dHydra/web.py", line 46, in get_template_path
+    if os.path.exists( os.getcwd()+"/worker/" + worker_name + "/templates/index.html" ):
+NameError: name 'worker_name' is not defined
+2016-08-26 16:28:40,465 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index/ (127.0.0.1) 9.31ms
+2016-08-26 16:28:49,657 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Connection': 'keep-alive', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 790, in render_string
+    template_path = self.get_template_path()
+  File "dHydra/web.py", line 46, in get_template_path
+    if os.path.exists( os.getcwd()+"/worker/" + worker_name + "/templates/index.html" ):
+NameError: name 'worker_name' is not defined
+2016-08-26 16:28:49,662 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index (127.0.0.1) 6.45ms
+2016-08-26 16:31:59,527 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 790, in render_string
+    template_path = self.get_template_path()
+  File "dHydra/web.py", line 46, in get_template_path
+    if os.path.exists( os.getcwd()+"/worker/" + worker_name + "/templates/index.html" ):
+NameError: name 'worker_name' is not defined
+2016-08-26 16:31:59,533 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index (127.0.0.1) 6.93ms
+2016-08-26 16:34:42,203 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Host': '127.0.0.1:5000', 'Accept-Language': 'en-US,en;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Connection': 'keep-alive'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1422, in _execute
+    result = self.prepare()
+  File "dHydra/web.py", line 40, in prepare
+    print(self.get_query_argument(worker_name))
+NameError: name 'worker_name' is not defined
+2016-08-26 16:34:42,218 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index (127.0.0.1) 17.79ms
+2016-08-26 16:34:42,331 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.78ms
+2016-08-26 16:35:05,969 - tornado.general - 1521 - WARNING - 400 GET /worker/Monitor/index (127.0.0.1): Missing argument worker_name
+2016-08-26 16:35:05,976 - tornado.access - 1946 - WARNING - 400 GET /worker/Monitor/index (127.0.0.1) 9.65ms
+2016-08-26 16:35:48,045 - tornado.general - 1521 - WARNING - 400 GET /worker/Monitor/index (127.0.0.1): Missing argument worker_name
+2016-08-26 16:35:48,048 - tornado.access - 1946 - WARNING - 400 GET /worker/Monitor/index (127.0.0.1) 3.77ms
+2016-08-26 16:36:29,787 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 790, in render_string
+    template_path = self.get_template_path()
+  File "dHydra/web.py", line 47, in get_template_path
+    if os.path.exists( os.getcwd()+"/worker/" + worker_name + "/templates/index.html" ):
+NameError: name 'worker_name' is not defined
+2016-08-26 16:36:29,805 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index (127.0.0.1) 21.57ms
+2016-08-26 16:37:29,818 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'Cache-Control': 'max-age=0', 'Accept-Encoding': 'gzip, deflate, sdch', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 790, in render_string
+    template_path = self.get_template_path()
+  File "dHydra/web.py", line 47, in get_template_path
+    if os.path.exists( os.getcwd()+"/worker/" + worker_name + "/templates/index.html" ):
+NameError: name 'worker_name' is not defined
+2016-08-26 16:37:29,829 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/index (127.0.0.1) 13.05ms
+2016-08-26 16:38:14,470 - tornado.access - 1946 - INFO - 200 GET /worker/Monitor/index (127.0.0.1) 11.51ms
+2016-08-26 16:38:14,613 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 26.35ms
+2016-08-26 16:38:14,622 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 2.90ms
+2016-08-26 16:42:47,829 - tornado.access - 1946 - INFO - 304 GET /worker/Monitor/index (127.0.0.1) 14.67ms
+2016-08-26 16:43:45,929 - tornado.access - 1946 - INFO - 304 GET /worker/Monitor/index (127.0.0.1) 16.50ms
+2016-08-26 16:44:17,973 - tornado.access - 1946 - INFO - 304 GET /worker/Monitor/index (127.0.0.1) 10.23ms
+2016-08-26 16:44:54,233 - tornado.access - 1946 - INFO - 304 GET /worker/Monitor/index (127.0.0.1) 16.63ms
+2016-08-26 16:52:38,086 - tornado.access - 1946 - INFO - 304 GET /worker/Monitor/index (127.0.0.1) 14.88ms
+2016-08-26 16:54:00,606 - tornado.access - 1946 - INFO - 304 GET /worker/Monitor/index (127.0.0.1) 23.84ms
+2016-08-26 16:56:42,124 - tornado.access - 1946 - INFO - 200 GET /worker/Monitor/index (127.0.0.1) 26.69ms
+2016-08-26 16:59:43,559 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Host': '127.0.0.1:5000', 'Accept-Encoding': 'gzip, deflate, sdch', 'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
+2016-08-26 16:59:43,593 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 36.19ms
+2016-08-26 17:02:38,495 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Encoding': 'gzip, deflate, sdch', 'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 37, in get
+    method_name == "index"
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
+2016-08-26 17:02:38,503 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 5.34ms
+2016-08-26 17:02:45,115 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Cache-Control': 'max-age=0', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 39, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
+2016-08-26 17:02:45,125 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 11.54ms
+2016-08-26 17:03:32,644 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8', 'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Cache-Control': 'max-age=0'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 39, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
+2016-08-26 17:03:32,659 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 19.15ms
+2016-08-26 17:04:40,243 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Accept-Language': 'en-US,en;q=0.8', 'Connection': 'keep-alive', 'Host': '127.0.0.1:5000'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 39, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
+2016-08-26 17:04:40,254 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 13.89ms
+2016-08-26 17:05:37,938 - tornado.application - 1524 - ERROR - Uncaught exception GET /worker/Monitor/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/worker/Monitor/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "dHydra/web.py", line 40, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/worker/Monitor/templates/.html'
+2016-08-26 17:05:37,954 - tornado.access - 1946 - ERROR - 500 GET /worker/Monitor/ (127.0.0.1) 18.95ms
+2016-08-26 17:06:11,486 - tornado.access - 1946 - INFO - 200 GET /worker/Monitor/ (127.0.0.1) 15.79ms
