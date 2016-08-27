@@ -36,7 +36,6 @@ class WorkerHandler(tornado.web.RequestHandler):
 			method_name = "index"
 		print("Worker Name: {}, method_name: {}".format(worker_name, method_name))
 		self.render(method_name+".html")
-		# self.render("index.html")
 
 	def prepare(self):
 		print("This is WorkerHandler")
@@ -55,7 +54,9 @@ class WorkerHandler(tornado.web.RequestHandler):
 class ApiHandler(tornado.web.RequestHandler):
 	def get(self, class_name, method):
 		controller = {"class_name": class_name, "method": method}
-		self.write(controller)
+		func = get_controller_method( class_name, method )
+		result = func(self.get_query_arguments)
+		self.write( result )
 
 def make_app():
 	"""

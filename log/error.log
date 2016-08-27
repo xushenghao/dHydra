@@ -225,3 +225,221 @@ Traceback (most recent call last):
     with open(path, "rb") as f:
 FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/templates/a.html'
 2016-08-27 06:37:01,869 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/a (127.0.0.1) 6.86ms
+2016-08-27 09:22:44,410 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Language': 'en-US,en;q=0.8', 'Connection': 'keep-alive'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 59, in get
+    self.write(result)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 690, in write
+    raise TypeError(message)
+TypeError: write() only accepts bytes, unicode, and dict objects. Lists not accepted for security reasons; see http://www.tornadoweb.org/en/stable/web.html#tornado.web.RequestHandler.write
+2016-08-27 09:22:44,513 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/ (127.0.0.1) 144.48ms
+2016-08-27 09:24:22,929 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Encoding': 'gzip, deflate, sdch', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Connection': 'keep-alive', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 59, in get
+    self.write(result)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 692, in write
+    chunk = escape.json_encode(chunk)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/escape.py", line 88, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 180, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <function get_workers at 0x7efbe8a44400> is not JSON serializable
+2016-08-27 09:24:23,018 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/ (127.0.0.1) 131.04ms
+2016-08-27 09:27:30,523 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate, sdch', 'Upgrade-Insecure-Requests': '1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Language': 'en-US,en;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 60, in get
+    self.write( json.dumps( result ) )
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 180, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <function get_workers at 0x7efbe8a42400> is not JSON serializable
+2016-08-27 09:27:30,534 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/ (127.0.0.1) 54.40ms
+2016-08-27 09:28:31,156 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Cache-Control': 'max-age=0', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 60, in get
+    self.write( json.dumps( result ) )
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 180, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <function get_workers at 0x7efbe8a42400> is not JSON serializable
+2016-08-27 09:28:31,166 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/ (127.0.0.1) 52.17ms
+2016-08-27 09:52:21,126 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/?a=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'If-None-Match': '"16bfb883c09350c2b956fc40765dfff9b2672c10"', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Host': '127.0.0.1:5000', 'Cache-Control': 'max-age=0'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 59, in get
+    self.write( result )
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 692, in write
+    chunk = escape.json_encode(chunk)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/escape.py", line 88, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 180, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/?a=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'If-None-Match': '"16bfb883c09350c2b956fc40765dfff9b2672c10"', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Host': '127.0.0.1:5000', 'Cache-Control': 'max-age=0'}) is not JSON serializable
+2016-08-27 09:52:21,141 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1) 55.37ms
+2016-08-27 10:01:54,677 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/?a=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'Cache-Control': 'max-age=0', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'If-None-Match': '"88a3f454898d7e82e7cb79dc7acca1b56ae2e1b9"', 'Accept-Language': 'en-US,en;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 58, in get
+    result = func(self)
+  File "/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/Controller.py", line 16, in workers
+    "request.get_query_arguments"   : request.get_query_arguments(["a"])
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 452, in get_query_arguments
+    return self._get_arguments(name, self.request.query_arguments, strip)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 464, in _get_arguments
+    for v in source.get(name, []):
+TypeError: unhashable type: 'list'
+2016-08-27 10:01:54,688 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1) 49.96ms
+2016-08-27 10:03:45,776 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/?a,b=1 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/?a,b=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Cache-Control': 'max-age=0', 'If-None-Match': '"94bffc7d55011b443d97da1bc99bcfb8d21f1de2"'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 58, in get
+    result = func(self)
+  File "/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/Controller.py", line 18, in workers
+    print(type(request.get_query_arguments["a"]))
+TypeError: 'method' object is not subscriptable
+2016-08-27 10:03:45,787 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/?a,b=1 (127.0.0.1) 59.21ms
+2016-08-27 10:03:52,053 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/?a=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 58, in get
+    result = func(self)
+  File "/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/Controller.py", line 18, in workers
+    print(type(request.get_query_arguments["a"]))
+TypeError: 'method' object is not subscriptable
+2016-08-27 10:03:52,058 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1) 6.45ms
+2016-08-27 12:14:23,952 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/workers/?a=1', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Encoding': 'gzip, deflate, sdch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Host': '127.0.0.1:5000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'If-None-Match': '"464337249f2c4c876d98a6bb19ec78a0c0c9653e"'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 58, in get
+    result = func(self.get_get_query_arguments)
+AttributeError: 'ApiHandler' object has no attribute 'get_get_query_arguments'
+2016-08-27 12:14:24,123 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/workers/?a=1 (127.0.0.1) 650.18ms
+2016-08-27 16:16:14,360 - tornado.application - 1524 - ERROR - Uncaught exception GET /Worker/Monitor/index/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/Worker/Monitor/index/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 38, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/index/templates/index.html'
+2016-08-27 16:16:14,611 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/index/ (127.0.0.1) 252.31ms
+2016-08-27 16:16:18,436 - tornado.application - 1524 - ERROR - Uncaught exception GET /Worker/Monitor/index/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/Worker/Monitor/index/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'Host': '127.0.0.1:5000', 'Accept-Encoding': 'gzip, deflate, sdch', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 38, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/index/templates/index.html'
+2016-08-27 16:16:18,442 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/index/ (127.0.0.1) 6.54ms
+2016-08-27 16:16:28,281 - tornado.application - 1524 - ERROR - Uncaught exception GET /Worker/Monitor/index (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/Worker/Monitor/index', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 38, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/templates/index.html'
+2016-08-27 16:16:28,284 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/index (127.0.0.1) 4.77ms
+2016-08-27 16:16:58,880 - tornado.application - 1524 - ERROR - Uncaught exception GET /Worker/Monitor/index/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/Worker/Monitor/index/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch', 'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 38, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/index/templates/index.html'
+2016-08-27 16:16:58,884 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/index/ (127.0.0.1) 5.36ms
+2016-08-27 17:46:13,482 - tornado.application - 1524 - ERROR - Uncaught exception GET /Worker/Monitor/index/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/Worker/Monitor/index/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8', 'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra/dHydra/web.py", line 38, in get
+    self.render(method_name+".html")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 699, in render
+    html = self.render_string(template_name, **kwargs)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 803, in render_string
+    t = loader.load(template_name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 424, in load
+    self.templates[name] = self._create_template(name)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/template.py", line 451, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/emptyset/Studio/dHydra/dHydra/Worker/Monitor/index/templates/index.html'
+2016-08-27 17:46:13,495 - tornado.access - 1946 - ERROR - 500 GET /Worker/Monitor/index/ (127.0.0.1) 11.01ms

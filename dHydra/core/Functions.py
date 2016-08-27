@@ -10,7 +10,7 @@ import importlib
 import sys
 import json
 import hashlib
-from dHydra.app import PRODUCER_NAME, PRODUCER_HASH
+# from dHydra.app import PRODUCER_NAME, PRODUCER_HASH
 import os
 import logging
 import traceback
@@ -33,26 +33,28 @@ def get_workers_info():
 def get_controller_method(class_name, method):
 	logger = logging.getLogger("Functions")
 	# get instance of controller
-	if os.path.exists(os.getcwd()+"/worker/" + class_name +"/" + "Controller.py"):
-		func = getattr(importlib.import_module("worker."+class_name+".Controller"), method)
+	if os.path.exists(os.getcwd()+"/Worker/" + class_name +"/" + "Controller.py"):
+		func = getattr(importlib.import_module("Worker."+class_name+".Controller"), method)
 		return func
 	else:
 		try:
-			func = getattr(importlib.import_module("dHydra.worker."+class_name+".Controller"), method)
+			func = getattr(importlib.import_module("dHydra.Worker."+class_name+".Controller"), method)
 			return func
 		except Exception as e:
 			return False
 
-"""
-V方法，动态加载数据API类
-V可以用Vendor来记忆
-"""
 def V(name, vendor_name = None, **kwargs):
+	return get_vendor(name = name, vendor_name =None, **kwargs)
+
+"""
+get_vendor方法，动态加载vendor类
+"""
+def get_vendor(name, vendor_name = None, **kwargs):
 	logger = logging.getLogger('Functions')
 	if vendor_name is None:
 		vendor_name = "V-"+name
-	class_name = name + 'Vendor'
-	module_name = 'vendor.' + name + '.' + class_name
+	class_name = name
+	module_name = 'Vendor.' + name + '.' + class_name
 	if os.path.exists(os.getcwd()+"/vendor/"+name+"/"+class_name+".py"):
 		try:
 			instance = getattr( __import__(module_name, globals(),locals(),[class_name], 0), class_name )(**kwargs)
@@ -63,69 +65,22 @@ def V(name, vendor_name = None, **kwargs):
 			instance = getattr( __import__("dHydra."+module_name, globals(),locals(),[class_name], 0), class_name )(**kwargs)
 		except ImportError:
 			traceback.print_exc()
-
 	return instance
 
-
-"""
-P方法，动态获取生产者类
-P可以用Producer来记忆
-"""
-def P(name, producer_name, **kwargs):
+def get_worker_class(class_name, **kwargs):
 	logger = logging.getLogger('Functions')
-	if producer_name is None:
-		print("producer_name参数不允许为空，请给producer实例设置一个名字")
-		print("命名规范：<actionName.producerName>")
-		return False
-	# 将参数排序来保证唯一性
-	json_kwargs = json.dumps( sorted(kwargs.items()) )
-	producer_hash = hashlib.sha1( ('name'+json_kwargs).encode('utf8') ).hexdigest()
-
-	if producer_hash in PRODUCER_HASH:
-		# 这个Instance已经存在
-		print( "Producer已经存在" )
-		PRODUCER_NAME[producer_name] = PRODUCER_HASH[producer_hash]
-		return PRODUCER_HASH[producer_hash]
-	else:
-		class_name = name + 'Producer'
-		module_name = 'producer.' + name + '.' + class_name
-		if os.path.exists(os.getcwd()+"/producer/"+name+"/"+class_name+".py"):
-			try:
-				instance = getattr( __import__(module_name, globals(),locals(),[class_name], 0), class_name )(name=producer_name, **kwargs)
-			except ImportError:
-				traceback.print_exc()
-		else:
-			try:
-				instance = getattr( __import__("dHydra."+module_name, globals(),locals(),[class_name], 0), class_name )(name=producer_name, **kwargs)
-			except ImportError:
-				traceback.print_exc()
-
-		# print(instance)
-		PRODUCER_NAME[producer_name] = instance
-		PRODUCER_HASH[producer_hash] = instance
-		logger.info("生成Producer:\t{}\t{}".format(producer_name,class_name) )
-		return instance
-
-"""
-A方法，动态获取Action类
-A可以用Action来记忆
-"""
-def A(name, action_name = None, **kwargs):
-	logger = logging.getLogger('Functions')
-	if action_name is None:
-		action_name = "A-" + name
-	class_name = name + 'Action'
-	module_name = 'action.' + name + '.' + class_name
-	if os.path.exists(os.getcwd()+"/action/"+name+"/"+class_name+".py"):
+	module_name = 'Worker.' + class_name + '.' + class_name
+	if os.path.exists(os.getcwd()+"/Worker/"+class_name+"/"+class_name+".py"):
 		try:
-			return getattr( __import__(module_name, globals(),locals(),[class_name], 0), class_name )(name=action_name, **kwargs)
+			return getattr( __import__(module_name, globals(),locals(),[class_name], 0), class_name )( **kwargs)
 		except ImportError:
 			traceback.print_exc()
 	else:
 		try:
-			return getattr( __import__("dHydra." + module_name, globals(),locals(),[class_name], 0), class_name )(name=action_name, **kwargs)
+			return getattr( __import__("dHydra." + module_name, globals(),locals(),[class_name], 0), class_name )( **kwargs)
 		except ImportError:
 			traceback.print_exc()
+
 
 """
 根据producer_name或者hash获取已经生成的Producer实例
@@ -143,3 +98,8 @@ def get_producer(producer_name = None, pHash = None):
 		except:
 			logger.error("没有找到对应的Producer")
 			return False
+
+def thread_start_worker(worker, nickname = None):
+	# this should be run as a target of a daemon thread
+	worker.start()
+	worker.join()

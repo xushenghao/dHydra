@@ -15,6 +15,9 @@ import copy
 from dHydra.console import *
 from datetime import datetime
 from abc import ABCMeta
+import signal
+import sys
+import os
 
 class Worker(multiprocessing.Process):
 	__metaclass__ = ABCMeta
@@ -55,7 +58,17 @@ class Worker(multiprocessing.Process):
 		if self.check_prerequisites() is True:
 			super().__init__()
 		else:
-			exit(0)
+			sys.exit(0)
+		self.shutdown_signals = [
+			signal.SIGQUIT,  # quit 信号
+			signal.SIGINT,  # 键盘信号
+			signal.SIGHUP,  # nohup 命令
+			signal.SIGTERM,  # kill 命令
+		]
+
+		for s in self.shutdown_signals:
+			# 捕获退出信号后的要调用的,唯一的 shutdown 接口
+			signal.signal(s, self.__on_termination__)
 
 	def __auto_restart_thread__( self ):
 		# Worker内置的默认自动重启线程方法
@@ -71,7 +84,13 @@ class Worker(multiprocessing.Process):
 			"token"		:	"the token is used to verify the authentication of the operation"
 		}
 		"""
-		pass
+		print(msg_command)
+		msg_command = json.loads( msg_command.decode("utf-8").replace("\'","\"") )
+		if msg_command["type"] == "sys":
+			str_kwargs = ""
+			for k in msg_command["kwargs"].keys():
+				str_kwargs += (k + "=" + "\'"+msg_command["kwargs"][k] + "\'" + "," )
+			eval( "self."+msg_command["operation_name"]+"("+ str_kwargs +")" )
 
 
 	def monitor_add_thread( self, thread, description = "No Description", restart_mode = "manual", restart_func = None ):
@@ -110,7 +129,8 @@ class Worker(multiprocessing.Process):
 		while True:
 			msg_command = self.command_listener.get_message()
 			if msg_command:
-				self.__command_handler__(msg_command)
+				if msg_command["type"] == "message":
+					self.__command_handler__(msg_command["data"])
 			else:
 				time.sleep(0.01)
 
@@ -140,6 +160,10 @@ class Worker(multiprocessing.Process):
 			else:
 				time.sleep(0.001)
 
+	def __on_termination__(self, sig, frame):
+		print("I'm going to be killed!!! pid:{}, sig:{}".format(self.pid, sig))
+		sys.exit(0)
+
 	def publish(self, data):
 		# publish data to redis
 		try:
@@ -152,11 +176,6 @@ class Worker(multiprocessing.Process):
 		初始化Worker
 		"""
 		self.daemon = True
-		# 开启心跳线程，并且加入线程监控
-		# self.__thread_heart_beat__ = threading.Thread( target = self.__heart_beat__ )
-		# self.__thread_heart_beat__.setDaemon(True)
-		# self.monitor_add_thread( thread = self.__thread_heart_beat__, description = "Heart Beat", restart_mode = "auto", restart_func = self.__auto_restart_thread__ )
-		# self.__thread_heart_beat__.start()
 
 		# 开启监听命令线程
 		self.__thread_listen_command__ = threading.Thread( target = self.__listen_command__ )
@@ -197,12 +216,12 @@ class Worker(multiprocessing.Process):
 			logger.setLevel(20)
 		return logger
 
-	def subscribe(self, worker_class_name = None, nick_name = None ):
+	def subscribe(self, worker_class_name = None, nickname = None ):
 		"""
 		订阅Worker
 		"""
 		# Step 1 : 检查Worker是否存在
-		# if nick_name is None:
+		# if nickname is None:
 			# find the worker_name
 		# Step 2 : 检查Worker是否开启
 

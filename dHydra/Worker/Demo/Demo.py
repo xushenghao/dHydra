@@ -8,7 +8,7 @@ class Demo(Worker):
         super().__init__(
 
         )
-        self.__listener__.subscribe( [ "dHydra.Worker.Demo.Default.Pub" ] )
+        self.__listener__.subscribe( [ self.redis_key + "Pub" ] )
 
     def __producer__(self):
         i = 0
