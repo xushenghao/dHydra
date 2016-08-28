@@ -7,7 +7,4 @@ class Monitor(Worker):
 
     def start_worker(self, worker_name, nickname):
         worker = get_worker_class(worker_name)
-        t = threading.Thread(target = thread_start_worker, args= (worker, nickname,))
-        # thread_start_worker(worker, nickname = nickname)
-        t.setDaemon(True)
-        t.start()
+        thread_start_worker(worker, nickname)

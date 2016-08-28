@@ -31,6 +31,8 @@ class Worker(multiprocessing.Process):
 				):
 		if nickname is None:
 			self.__nickname__ = self.__class__.__name__ + "Default"
+		else:
+			self.__nickname__ = nickname
 		self.__singleton__ = singleton
 		self.__description__ = description
 		self.__heart_beat_interval__ = heart_beat_interval
@@ -57,6 +59,7 @@ class Worker(multiprocessing.Process):
 		self.logger = self.get_logger( level = log_level )
 		if self.check_prerequisites() is True:
 			super().__init__()
+			self.daemon = True
 		else:
 			sys.exit(0)
 		self.shutdown_signals = [
@@ -175,7 +178,6 @@ class Worker(multiprocessing.Process):
 		"""
 		初始化Worker
 		"""
-		self.daemon = True
 
 		# 开启监听命令线程
 		self.__thread_listen_command__ = threading.Thread( target = self.__listen_command__ )

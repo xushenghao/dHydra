@@ -4,10 +4,8 @@ import time
 
 
 class Demo(Worker):
-    def __init__(self):
-        super().__init__(
-
-        )
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self.__listener__.subscribe( [ self.redis_key + "Pub" ] )
 
     def __producer__(self):

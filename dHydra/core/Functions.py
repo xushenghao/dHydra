@@ -102,4 +102,4 @@ def get_producer(producer_name = None, pHash = None):
 def thread_start_worker(worker, nickname = None):
 	# this should be run as a target of a daemon thread
 	worker.start()
-	worker.join()
+	# worker.join()

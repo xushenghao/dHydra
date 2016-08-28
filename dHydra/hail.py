@@ -2,7 +2,7 @@ import click
 from dHydra.console import *
 import dHydra.web
 import threading
-
+import time
 @click.command()
 @click.argument('what', nargs = -1)
 def hail(what = None):
@@ -17,14 +17,17 @@ def hail(what = None):
             thread_monitor = threading.Thread(target = thread_start_worker ,args=(monitor,) )
             thread_monitor.setDaemon(True)
 
+            demo = get_worker_class("Demo")
+            demo.start()
+
             # open a thread for webserver
             thread_tornado = threading.Thread(target = dHydra.web.start_server)
-            # web = dHydra.web.start_server()
+            # thread_tornado.setDaemon(True)
             thread_monitor.start()
             print("Monitor has started")
             thread_tornado.start()
-            thread_monitor.join()
-            thread_tornado.join()
+            # thread_monitor.join()
+            # thread_tornado.join()
     except Exception as e:
         print("Hail What?")
         print(e)
