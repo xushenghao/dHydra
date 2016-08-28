@@ -175,11 +175,11 @@ class %sAction(Action):
 		f = open( dirAction + '/__init__.py', 'w', encoding= 'UTF-8' )
 		f.close()
 
+
+
 def init( demo = True ):
 	os.makedirs( "data" , exist_ok=True )
-	os.makedirs( "producer" , exist_ok=True )
-	os.makedirs( "vendor" , exist_ok=True )
-	os.makedirs( "action" , exist_ok=True )
+	os.makedirs( "Worker" , exist_ok=True )
 	print("目录结构已经生成")
 	f = open('config.json', 'w', encoding="UTF-8")
 	f.write(

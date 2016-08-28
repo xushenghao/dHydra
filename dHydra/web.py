@@ -35,7 +35,10 @@ class WorkerHandler(tornado.web.RequestHandler):
 		if method_name == "":
 			method_name = "index"
 		print("Worker Name: {}, method_name: {}".format(worker_name, method_name))
-		self.render(method_name+".html")
+		try:
+			self.render(method_name+".html")
+		except Exception as e:
+			self.write( "Cannot render: "+self.get_template_path() + "/" + method_name+".html" )
 
 	def prepare(self):
 		print("This is WorkerHandler")

@@ -33,6 +33,8 @@ class Worker(multiprocessing.Process):
 			self.__nickname__ = self.__class__.__name__ + "Default"
 		else:
 			self.__nickname__ = nickname
+		self.nickname = self.__nickname__
+		self.name = self.__nickname__
 		self.__singleton__ = singleton
 		self.__description__ = description
 		self.__heart_beat_interval__ = heart_beat_interval
@@ -110,9 +112,9 @@ class Worker(multiprocessing.Process):
 		"""
 		# 检测redis, mongodb连接
 		try:
-			self.redis = redis.Redis(host = '127.0.0.1', port = 6379)
-			self.redis.client_list()
-			self.__listener__ = self.redis.pubsub()
+			self.__redis__ = redis.Redis(host = '127.0.0.1', port = 6379)
+			self.__redis__.client_list()
+			self.__listener__ = self.__redis__.pubsub()
 			self.__listener__.subscribe(["dHydra"])
 		except redis.ConnectionError:
 			self.logger.error("Cannot connect to redis")
@@ -126,7 +128,7 @@ class Worker(multiprocessing.Process):
 
 	def __listen_command__(self):
 		#
-		self.command_listener = self.redis.pubsub()
+		self.command_listener = self.__redis__.pubsub()
 		channel_name = self.redis_key + "Command"
 		self.command_listener.subscribe( [channel_name] )
 		while True:
@@ -141,6 +143,7 @@ class Worker(multiprocessing.Process):
 		# flush status infomation to redis
 		status = dict()
 		status["heart_beat"] = datetime.now()
+		status["nickname"] = self.__nickname__
 		status["error_msg"] = self.__error_msg__
 		status["stop_info"] = self.__stop_info__
 		status["stop_time"] = self.__stop_time__
@@ -149,8 +152,7 @@ class Worker(multiprocessing.Process):
 		status["data_feeder"] = self.__data_feeder__
 		status["pid"] = self.pid
 		status["follower"] = self.__follower__
-		self.redis.set( self.redis_key + "Info", status )
-		time.sleep(self.__heart_beat_interval__)
+		self.__redis__.hmset( self.redis_key + "Info", status )
 
 	def __producer__(self):
 		pass
@@ -163,14 +165,19 @@ class Worker(multiprocessing.Process):
 			else:
 				time.sleep(0.001)
 
+	def __before_termination__(self, sig):
+		pass
+
 	def __on_termination__(self, sig, frame):
-		print("I'm going to be killed!!! pid:{}, sig:{}".format(self.pid, sig))
+		self.__before_termination__(sig)
+		self.__status__ = "terminated"
+		self.__heart_beat__()		# The last heart_beat, sad...
 		sys.exit(0)
 
 	def publish(self, data):
 		# publish data to redis
 		try:
-			self.redis.publish( self.channel_pub , data )
+			self.__redis__.publish( self.channel_pub , data )
 		except Exception as e:
 			self.logger.warning(e)
 
@@ -178,6 +185,7 @@ class Worker(multiprocessing.Process):
 		"""
 		初始化Worker
 		"""
+		self.__status__ = "started"
 
 		# 开启监听命令线程
 		self.__thread_listen_command__ = threading.Thread( target = self.__listen_command__ )
@@ -201,6 +209,7 @@ class Worker(multiprocessing.Process):
 		while True:
 			# heart beat
 			self.__heart_beat__()
+			time.sleep(self.__heart_beat_interval__)
 
 	def get_logger(self, level):
 		logger = logging.getLogger(self.__class__.__name__)
@@ -235,4 +244,4 @@ class Worker(multiprocessing.Process):
 
 	# 需要在子类中重写的数据处理方法
 	def __data_handler__(self, msg):
-		print(msg)
+		pass

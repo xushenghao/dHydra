@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import logging
-from dHydra.app import *
+from dHydra.core.Functions import *
 
 def init_loger():
 	formatter = logging.Formatter('%(asctime)s - %(name)s - %(lineno)d - %(levelname)s - %(message)s')

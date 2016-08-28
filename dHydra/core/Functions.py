@@ -24,9 +24,6 @@ def get_workers():
 			workers.append(item)
 	return workers
 
-def get_workers_info():
-	pass
-
 """
 动态加载web controller
 """
@@ -67,17 +64,17 @@ def get_vendor(name, vendor_name = None, **kwargs):
 			traceback.print_exc()
 	return instance
 
-def get_worker_class(class_name, **kwargs):
+def get_worker_class(worker_name, **kwargs):
 	logger = logging.getLogger('Functions')
-	module_name = 'Worker.' + class_name + '.' + class_name
-	if os.path.exists(os.getcwd()+"/Worker/"+class_name+"/"+class_name+".py"):
+	module_name = 'Worker.' + worker_name + '.' + worker_name
+	if os.path.exists(os.getcwd()+"/Worker/"+worker_name+"/"+worker_name+".py"):
 		try:
-			return getattr( __import__(module_name, globals(),locals(),[class_name], 0), class_name )( **kwargs)
+			return getattr( __import__(module_name, globals(),locals(),[worker_name], 0), worker_name )( **kwargs)
 		except ImportError:
 			traceback.print_exc()
 	else:
 		try:
-			return getattr( __import__("dHydra." + module_name, globals(),locals(),[class_name], 0), class_name )( **kwargs)
+			return getattr( __import__("dHydra." + module_name, globals(),locals(),[worker_name], 0), worker_name )( **kwargs)
 		except ImportError:
 			traceback.print_exc()
 
@@ -98,8 +95,3 @@ def get_producer(producer_name = None, pHash = None):
 		except:
 			logger.error("没有找到对应的Producer")
 			return False
-
-def thread_start_worker(worker, nickname = None):
-	# this should be run as a target of a daemon thread
-	worker.start()
-	# worker.join()

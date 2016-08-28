@@ -56,7 +56,7 @@ AUTHOR_EMAIL = "emptyset110@gmail.com"
 
 URL = "http://dHydra.org"
 
-VERSION = "0.13.0"
+VERSION = "0.13.1"
 
 LICENSE = "Apache Software License"
 
@@ -74,7 +74,10 @@ setup(
 ,	install_requires = ["requests","numpy","pandas","pymongo","websockets","rsa","ntplib"]
 ,	entry_points='''
 				[console_scripts]
-				hail=dHydra.hail:hail
+				hail=dHydra.main:hail
+				start=dHydra.main:start
+				stop=dHydra.main:terminate
+				terminate=dHydra.main:terminate
 				'''
 ,	keywords = KEYWORDS
 ,	author = AUTHOR
