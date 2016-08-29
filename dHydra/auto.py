@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
+import click
 
+@click.command()
+@click.argument('worker_name', nargs = 1)
 def new_worker(worker_name = None):
 	dir_worker = "Worker/" + worker_name
-	if os.path.exists(dirAction):
+	if os.path.exists(dir_worker):
 		print("[创建失败]：目录 "+dir_worker+"已经存在")
 	else:
 		os.makedirs( dir_worker )
@@ -13,7 +16,7 @@ def new_worker(worker_name = None):
 		f.write("""# -*- coding: utf-8 -*-
 from dHydra.core.Worker import Worker
 
-class {}(Worker):
+class %s(Worker):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)  # You ae not supposed to change THIS
 
@@ -56,11 +59,11 @@ class {}(Worker):
         It will be called when a TERM signal is received, right before sys.exit(0)
         \"\"\"
         print("Ahhhh! I'm going to be killed. My pid:{}, signal received:{}".format(self.pid, sig ) )
-""".format( worker_name )
+""" % ( worker_name )
 		)
 		f.close()
 		# 创建config,connection,const, __init__.py
-		f = open( dirAction + '/__init__.py', 'w', encoding= 'UTF-8' )
+		f = open( dir_worker + '/__init__.py', 'w', encoding= 'UTF-8' )
 		f.close()
 
 

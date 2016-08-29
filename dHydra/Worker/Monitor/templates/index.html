@@ -17,59 +17,55 @@
 <div class="ui container" style = "padding-top: 20px; padding-bottom: 10px">
     <h1 class="ui header" style = "color: rgba(100,100,100,1); font-size: 50px">Workers Monitor</h1>
     <button class="ui button">Show Active Workers</button>
-    <table class="ui celled structured table">
+    <table class="ui collapsing celled table">
       <thead>
         <tr>
-          <th rowspan="2">Worker Name</th>
-          <th rowspan="2">Nickname</th>
-          <th rowspan="2">pid</th>
-          <th rowspan="2">Status</th>
-          <th colspan="3">Operation</th>
-        </tr>
-        <tr>
-            <th><button class="ui button">Stop</button></th>
-            <th><button class="ui button">Stop</button></th>
-            <th><button class="ui button">Stop</button></th>
+          <th rowspan="1" class="center aligned">PID</th>
+          <th rowspan="1" class="center aligned">Worker Name</th>
+          <th rowspan="1" class="center aligned">Nickname</th>
+          <th rowspan="1" class="center aligned">Description</th>
+          <th rowspan="1" class="center aligned">Status</th>
+          <th colspan="2" class="center aligned">Operation</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="center aligned">
         <tr>
-          <td>Alpha Team</td>
-          <td>Project 1</td>
-          <td class="right aligned">2</td>
-          <td class="center aligned">
+          <td>4409</td>
+          <td>Demo</td>
+          <td>DemoDefault</td>
+          <td>This is the Demo, subscribes itself and generates one number per second</td>
+          <td>
             <i class="large green checkmark icon"></i>
           </td>
-          <td></td>
-          <td></td>
+          <td><button class="ui button">Stop</button></td>
         </tr>
         <tr>
-          <td rowspan="3">Beta Team</td>
-          <td>Project 1</td>
-          <td class="right aligned">52</td>
+          <td>51309</td>
+          <td class="middle aligned" rowspan="3">Monitor</td>
+          <td>WorkerMonitor1</td>
+          <td></td>
           <td class="center aligned">
             <i class="large green checkmark icon"></i>
           </td>
-          <td></td>
-          <td></td>
+          <td><button class="ui button">Stop</button></td>
         </tr>
         <tr>
-          <td>Project 2</td>
-          <td class="right aligned">12</td>
+          <td>12483</td>
+          <td>WorkerMonitor2</td>
           <td></td>
-          <td class="center aligned">
+          <td>
             <i class="large green checkmark icon"></i>
           </td>
-          <td></td>
+          <td><button class="ui button">Stop</button></td>
         </tr>
         <tr>
-          <td>Project 3</td>
-          <td class="right aligned">21</td>
-          <td class="center aligned">
+          <td>3303</td>
+          <td>WorkerMonitor3</td>
+          <td></td>
+          <td>
             <i class="large green checkmark icon"></i>
           </td>
-          <td></td>
-          <td></td>
+          <td><button class="ui button">Stop</button></td>
         </tr>
       </tbody>
     </table>

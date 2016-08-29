@@ -48,7 +48,7 @@ def get_pid_by_nickname( redis_cli = None, nickname = None ):
         return 0
 
 def __command_handler__(msg_command):
-    # cli is a dict with the following structure:
+    # msg_command is a dict with the following structure:
     """
     msg_command = {
         "type"	:		"sys/customized",

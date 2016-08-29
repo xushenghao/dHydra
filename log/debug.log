@@ -300,3 +300,446 @@ TypeError: keys must be a string
 2016-08-29 08:26:21,203 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.52ms
 2016-08-29 08:26:35,913 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 1.59ms
 2016-08-29 08:29:26,660 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 1.65ms
+2016-08-29 10:20:22,433 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:20:22,435 - DB - 44 - WARNING - Failed to connect to redis
+2016-08-29 10:20:22,717 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:20:22,723 - DB - 44 - WARNING - Failed to connect to redis
+2016-08-29 10:20:53,347 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:20:53,441 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:20:53,444 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 10:20:53,462 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 10:20:53,563 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:20:55,536 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 20.36ms
+2016-08-29 10:20:55,804 - tornado.access - 1946 - INFO - 304 GET /static/css/font-awesome.min.css (127.0.0.1) 101.24ms
+2016-08-29 10:20:55,816 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 8.88ms
+2016-08-29 10:20:55,847 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 19.94ms
+2016-08-29 10:20:55,864 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 3.00ms
+2016-08-29 10:20:55,875 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 8.37ms
+2016-08-29 10:20:55,885 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 7.88ms
+2016-08-29 10:20:56,662 - tornado.access - 1946 - INFO - 304 GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.79ms
+2016-08-29 10:20:57,170 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 1.98ms
+2016-08-29 10:21:24,855 - tornado.access - 1946 - WARNING - 404 GET /worker/Monitor/index (127.0.0.1) 1.77ms
+2016-08-29 10:21:32,630 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.08ms
+2016-08-29 10:21:33,328 - tornado.access - 1946 - INFO - 200 GET /static/css/Semantic-UI/themes/default/assets/fonts/icons.woff2 (127.0.0.1) 6.68ms
+2016-08-29 10:23:28,853 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.09ms
+2016-08-29 10:53:37,470 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:53:37,781 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:53:37,787 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 10:53:37,811 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 10:53:37,870 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 10:54:44,586 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 18.68ms
+2016-08-29 10:54:47,561 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 2.20ms
+2016-08-29 11:09:24,279 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 5.43ms
+2016-08-29 11:30:06,062 - tornado.access - 1946 - WARNING - 404 GET /api/Worker/get_active_workers/ (127.0.0.1) 1.52ms
+2016-08-29 11:30:09,440 - tornado.access - 1946 - WARNING - 404 GET /api/Worker/get_active_worker/ (127.0.0.1) 1.71ms
+2016-08-29 11:30:15,266 - tornado.access - 1946 - WARNING - 404 GET /api/Worker/get_alive_workers/ (127.0.0.1) 1.84ms
+2016-08-29 11:30:32,359 - tornado.access - 1946 - WARNING - 404 GET /api/Worker/get_alive_workers/ (127.0.0.1) 4.47ms
+2016-08-29 11:30:38,945 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 65.50ms
+2016-08-29 11:38:10,565 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 2.81ms
+2016-08-29 11:40:16,278 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:40:16,376 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:40:16,379 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 11:40:16,395 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 11:40:16,410 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:40:17,248 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 11.51ms
+2016-08-29 11:40:32,996 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:40:33,127 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:40:33,130 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 11:40:33,149 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 11:40:33,167 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:40:35,083 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 22.47ms
+2016-08-29 11:44:52,277 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:44:52,384 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:44:52,387 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 11:44:52,403 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 11:44:52,417 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:44:52,848 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 19.32ms
+2016-08-29 11:44:53,020 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 85.09ms
+2016-08-29 11:44:53,063 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 39.93ms
+2016-08-29 11:44:53,075 - tornado.access - 1946 - INFO - 304 GET /static/css/font-awesome.min.css (127.0.0.1) 10.93ms
+2016-08-29 11:44:53,095 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 18.02ms
+2016-08-29 11:44:53,941 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/themes/default/assets/fonts/icons.woff2 (127.0.0.1) 138.68ms
+2016-08-29 11:45:28,615 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:45:28,751 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:45:28,765 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 11:45:28,789 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 11:45:28,810 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:45:34,177 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 36.91ms
+2016-08-29 11:48:46,714 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 3.04ms
+2016-08-29 11:49:45,689 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:49:45,791 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:49:45,794 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 11:49:45,818 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 11:49:45,838 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:49:51,220 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 18.39ms
+2016-08-29 11:51:26,711 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.96ms
+2016-08-29 11:52:32,919 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:52:33,018 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:52:33,021 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 11:52:33,046 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 11:52:33,056 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 11:52:36,277 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 16.91ms
+2016-08-29 11:54:53,559 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.41ms
+2016-08-29 11:56:37,045 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.39ms
+2016-08-29 11:58:26,026 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 8.68ms
+2016-08-29 11:58:51,506 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 8.70ms
+2016-08-29 11:59:30,720 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 4.98ms
+2016-08-29 12:03:45,323 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 6.87ms
+2016-08-29 12:03:54,017 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 4.92ms
+2016-08-29 12:04:04,295 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.61ms
+2016-08-29 12:04:54,241 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.46ms
+2016-08-29 12:07:41,029 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 4.78ms
+2016-08-29 12:08:37,934 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 4.71ms
+2016-08-29 12:09:02,701 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.56ms
+2016-08-29 12:09:21,359 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 8.82ms
+2016-08-29 12:09:28,699 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.17ms
+2016-08-29 12:09:59,402 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.35ms
+2016-08-29 12:12:37,683 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 8.05ms
+2016-08-29 12:13:08,019 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 11.59ms
+2016-08-29 12:13:29,328 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 14.79ms
+2016-08-29 12:16:06,891 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 7.48ms
+2016-08-29 12:16:18,047 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 5.80ms
+2016-08-29 12:16:28,916 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 8.67ms
+2016-08-29 12:16:43,535 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 6.05ms
+2016-08-29 12:16:58,128 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 9.78ms
+2016-08-29 12:17:52,937 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 8.16ms
+2016-08-29 12:36:11,383 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 12.64ms
+2016-08-29 13:51:33,868 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 13:51:34,084 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 13:51:34,087 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 13:51:34,143 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 13:51:34,158 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 13:51:36,965 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 25.34ms
+2016-08-29 13:57:30,068 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 58.40ms
+2016-08-29 13:57:30,713 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 303.62ms
+2016-08-29 14:05:34,271 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:05:34,451 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:05:34,457 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:05:34,496 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:05:34,505 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:05:51,553 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:06:40,624 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:06:40,721 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:06:40,724 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:06:40,749 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:06:40,759 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:06:47,316 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:06:47,946 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:06:47,950 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:06:48,046 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:06:48,115 - CTP - 59 - WARNING - name 'time' is not defined
+2016-08-29 14:09:27,776 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:09:27,893 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:09:27,902 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:09:27,928 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:09:27,944 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:09:35,556 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:09:35,863 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:09:35,872 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:09:35,897 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:09:35,923 - CTP - 64 - WARNING - name 'time' is not defined
+2016-08-29 14:09:58,737 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:10:53,477 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 14:10:56,504 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:10:56,646 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:10:56,656 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:10:56,680 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:10:56,698 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:38:57,028 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:39:08,159 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:39:08,259 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:39:08,263 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:39:08,280 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:39:08,291 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:39:12,368 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:40:11,807 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:40:11,904 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:40:11,907 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:40:11,930 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:40:11,947 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:40:17,870 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:40:18,273 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:40:18,277 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:40:18,294 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:41:04,250 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:41:04,360 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:41:04,364 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:41:04,395 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:41:04,411 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:23,450 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:23,837 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:23,842 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:43:23,857 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:43:54,149 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:54,250 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:54,253 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:43:54,277 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:43:54,301 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:58,519 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:58,847 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:43:58,873 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:43:58,916 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:44:09,486 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:46:09,849 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 14:46:13,948 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:46:14,165 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:46:14,181 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:46:14,206 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:46:14,232 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:46:18,047 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:46:18,451 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:46:18,458 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:46:18,480 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:46:47,542 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:47:32,318 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 14:47:36,587 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:47:36,789 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:47:36,800 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:47:36,832 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:47:36,848 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:48:42,730 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:48:43,129 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:48:43,135 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:48:43,154 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:48:57,850 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:49:50,420 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 14:49:54,238 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:49:54,414 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 14:49:54,422 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 14:49:54,446 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 14:49:54,464 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:17:51,057 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:17:51,452 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:17:51,457 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:17:51,506 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:17:51,565 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:19:12,859 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:19:13,387 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:19:13,392 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:19:13,405 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:23:05,637 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 17:23:09,228 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:09,351 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:09,356 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:23:09,387 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:23:09,412 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:40,597 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:40,691 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:40,694 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:23:40,717 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:23:40,733 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:44,521 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:44,885 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:23:44,889 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:23:44,903 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:24:10,276 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 17:24:13,978 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:24:14,103 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:24:14,112 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:24:14,136 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:24:14,149 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:24:35,025 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:24:35,423 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:24:35,427 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:24:35,450 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:25:32,184 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:32,285 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:32,288 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:25:32,305 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:25:32,322 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:41,081 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:41,466 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:41,470 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:25:41,490 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:25:53,846 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 17:25:57,767 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:57,945 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:25:57,956 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:25:57,987 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:25:58,013 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:26:03,202 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:26:03,599 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:26:03,604 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:26:03,622 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:31:16,287 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:31:16,405 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:31:16,408 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:31:16,433 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:31:16,444 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:31:20,036 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:31:20,331 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:31:20,339 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:31:20,367 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:32:25,341 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:32:25,464 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:32:25,469 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:32:25,489 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:32:25,499 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:32:29,844 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:32:30,211 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:32:30,215 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:32:30,234 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:33:24,555 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 17:33:28,413 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:33:28,518 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:33:28,523 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:33:28,555 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:33:28,593 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:12,903 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:13,007 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:13,010 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:36:13,032 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:36:13,050 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:17,373 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:17,744 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:17,748 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:36:17,763 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:36:54,079 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:54,178 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:36:54,181 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:36:54,198 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:36:54,216 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:00,524 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:00,847 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:00,856 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:37:00,879 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:37:42,267 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 17:37:47,619 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:47,715 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:47,718 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:37:47,735 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:37:47,752 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:51,304 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:51,735 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 17:37:51,740 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 17:37:51,772 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 17:38:49,788 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 18:01:09,569 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 18:01:09,900 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 18:01:09,903 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 18:01:09,925 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 18:01:09,963 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 18:04:46,763 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 18:04:47,293 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 18:04:47,316 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 18:04:47,370 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:08:47,779 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:08:48,204 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:08:48,208 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:08:48,226 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:08:48,253 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:09:12,581 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:09:13,084 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:09:13,089 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:09:13,106 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:09:55,430 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:11:08,802 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 19:11:11,689 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:11:11,830 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:11:11,845 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:11:11,879 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:11:11,889 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:11:38,928 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:11:39,377 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:11:39,382 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:11:39,402 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:12:33,373 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:12:54,425 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 19:12:59,546 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:12:59,728 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:12:59,745 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:12:59,778 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:12:59,808 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:13:00,930 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:13:01,283 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:13:01,298 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:13:01,319 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:13:44,054 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:13:49,196 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:13:49,294 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:13:49,302 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:13:49,355 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:13:57,926 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 19:14:02,015 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:02,172 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:02,181 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:14:02,203 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:14:02,239 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:10,867 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:10,987 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:10,990 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:14:11,013 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:14:11,024 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:17,472 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:17,828 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:17,832 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:14:17,859 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:14:45,548 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 19:14:49,093 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:49,226 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:14:49,234 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:14:49,256 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:14:49,272 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:06,800 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:06,913 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:06,916 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:15:06,933 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:15:06,950 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:09,323 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:09,691 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:09,695 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:15:09,712 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:15:33,986 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 19:15:36,589 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:36,694 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 19:15:36,698 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 19:15:36,726 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 19:15:36,756 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:30:48,459 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:31:18,278 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:31:18,382 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:31:18,386 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:31:18,413 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:31:18,432 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:31:23,797 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:31:24,208 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:31:24,212 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:31:24,233 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:32:01,465 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 20:32:05,484 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:05,602 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:05,609 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:32:05,628 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:32:05,646 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:10,504 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:10,614 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:10,632 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:32:10,662 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:32:10,683 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:15,830 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:16,187 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:32:16,191 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:32:16,212 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:33:11,734 - tornado.general - 204 - INFO - /home/emptyset/Studio/dHydra/Worker/CTP/CTP.py modified; restarting server
+2016-08-29 20:33:16,475 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:16,623 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:16,628 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:33:16,650 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:33:16,668 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:30,587 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:30,685 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:30,688 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:33:30,712 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:33:30,728 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:37,929 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:38,293 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:33:38,301 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:33:38,321 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:34:43,778 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:49:36,761 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:49:58,193 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:49:58,197 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:49:58,315 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 20:49:58,320 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 20:49:58,336 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 20:49:58,354 - DB - 39 - INFO - Trying to connect to redis

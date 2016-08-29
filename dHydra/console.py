@@ -27,7 +27,16 @@ def init_loger():
 	logger.addHandler(file_handler)
 	logger.addHandler(file_handler2)
 
+def start_worker(worker_name = None, nickname = None, **kwargs):
+    msg = { "type":"sys", "operation_name":"start_worker", "kwargs": { "worker_name": worker_name } }
+    if nickname is not None:
+        msg["kwargs"]["nickname"] = nickname[0]
+    for k in kwargs.keys():
+        msg["kwargs"][k] = kwargs[k]
+    __redis__.publish( "dHydra.Command", msg )
+
 """
 初始化日志
 """
 init_loger()
+__redis__ = get_vendor("DB").get_redis()

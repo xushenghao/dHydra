@@ -79,7 +79,9 @@ def make_app():
 		(r"/static/fonts/(.*)", tornado.web.StaticFileHandler,  { "path": os.path.split(os.path.realpath(__file__))[0] + "/static/fonts/" } ),
 		(r"/api/Worker/(.*)/(.*)/", ApiHandler),	# ClassName, MethodName
 		(r"/Worker/(.*)/(.*)", WorkerHandler)		# ClassName, TemplateName
-    ])
+    	]
+		, debug = True
+		)
 
 def start_server(port = 5000):
 	app = make_app()
