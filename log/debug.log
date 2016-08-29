@@ -1,0 +1,302 @@
+2016-08-28 22:18:30,532 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:18:30,554 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:18:32,057 - DB - 34 - WARNING - >>>>>>>>>>>>>>>>>>连接到mongodb失败<<<<<<<<<<<<<<<<<<<
+2016-08-28 22:18:32,057 - Monitor - 124 - ERROR - Cannot connect to mongodb
+2016-08-28 22:18:49,255 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:18:49,268 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:18:49,269 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:18:49,271 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:19:22,633 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:19:22,647 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:19:22,648 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:19:22,650 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:21:32,355 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:21:32,369 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:21:32,371 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:21:32,372 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:21:48,439 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.52ms
+2016-08-28 22:21:48,506 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 2.67ms
+2016-08-28 22:21:48,507 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 0.41ms
+2016-08-28 22:21:48,507 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 0.37ms
+2016-08-28 22:21:48,508 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 0.58ms
+2016-08-28 22:21:50,013 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 0.43ms
+2016-08-28 22:22:21,588 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.38ms
+2016-08-28 22:23:52,897 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:23:52,910 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:23:52,912 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:23:52,914 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:24:03,823 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.64ms
+2016-08-28 22:24:04,927 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 0.60ms
+2016-08-28 22:24:34,903 - tornado.access - 1946 - INFO - 200 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 2.71ms
+2016-08-28 22:24:34,934 - tornado.access - 1946 - INFO - 200 GET /static/js/typed.js (127.0.0.1) 0.75ms
+2016-08-28 22:24:34,949 - tornado.access - 1946 - INFO - 200 GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 1.22ms
+2016-08-28 22:24:34,976 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.45ms
+2016-08-28 22:24:48,466 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:24:48,479 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:24:48,481 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:24:48,483 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:24:55,244 - tornado.access - 1946 - INFO - 200 GET / (127.0.0.1) 2.71ms
+2016-08-28 22:24:55,274 - tornado.access - 1946 - INFO - 200 GET /static/css/bootstrap.min.css (127.0.0.1) 3.11ms
+2016-08-28 22:24:55,275 - tornado.access - 1946 - INFO - 200 GET /static/css/font-awesome.min.css (127.0.0.1) 0.52ms
+2016-08-28 22:24:55,275 - tornado.access - 1946 - INFO - 200 GET /static/js/canvas-nest.min.js (127.0.0.1) 0.38ms
+2016-08-28 22:24:55,277 - tornado.access - 1946 - INFO - 200 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 1.59ms
+2016-08-28 22:24:55,433 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.32ms
+2016-08-28 22:25:00,744 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 0.58ms
+2016-08-28 22:27:39,273 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/get_alive_workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/web.py", line 62, in get
+    self.write( result )
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 692, in write
+    chunk = escape.json_encode(chunk)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/escape.py", line 88, in json_encode
+    return json.dumps(value).replace("</", "<\\/")
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+TypeError: keys must be a string
+2016-08-28 22:27:39,276 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 4.86ms
+2016-08-28 22:29:19,474 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:29:19,488 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:29:19,490 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:29:19,492 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:29:31,751 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/get_alive_workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Cache-Control': 'max-age=0', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/web.py", line 61, in get
+    result = func(self.get_query_arguments)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/Controller.py", line 35, in get_alive_workers
+    result = json.dumps(result)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+TypeError: keys must be a string
+2016-08-28 22:29:31,752 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 2.93ms
+2016-08-28 22:31:24,368 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:31:24,382 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:31:24,384 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:31:24,387 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:31:28,256 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/get_alive_workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': '127.0.0.1:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/web.py", line 61, in get
+    result = func(self.get_query_arguments)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/Controller.py", line 35, in get_alive_workers
+    result = json.dumps(result, ensure_ascii=False)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+TypeError: keys must be a string
+2016-08-28 22:31:28,257 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 2.93ms
+2016-08-28 22:32:24,048 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:32:24,062 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:32:24,064 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:32:24,066 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:32:28,233 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/get_alive_workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Cache-Control': 'max-age=0', 'Host': '127.0.0.1:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'en-US,en;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/web.py", line 61, in get
+    result = func(self.get_query_arguments)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/Controller.py", line 32, in get_alive_workers
+    "res"       : json.dumps( alive_workers ),
+UnboundLocalError: local variable 'json' referenced before assignment
+2016-08-28 22:32:28,235 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 2.98ms
+2016-08-28 22:32:42,045 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:32:42,058 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:32:42,060 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:32:42,062 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:32:45,288 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/get_alive_workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'Cache-Control': 'max-age=0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/web.py", line 61, in get
+    result = func(self.get_query_arguments)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/Controller.py", line 33, in get_alive_workers
+    "res"       : json.dumps( alive_workers ),
+UnboundLocalError: local variable 'json' referenced before assignment
+2016-08-28 22:32:45,290 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 3.28ms
+2016-08-28 22:33:09,800 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:33:09,814 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:33:09,815 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:33:09,817 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:33:12,566 - tornado.application - 1524 - ERROR - Uncaught exception GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1)
+HTTPServerRequest(protocol='http', host='127.0.0.1:5000', method='GET', uri='/api/Worker/Monitor/get_alive_workers/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Host': '127.0.0.1:5000', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36', 'Cache-Control': 'max-age=0', 'Accept-Language': 'en-US,en;q=0.8', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/site-packages/tornado/web.py", line 1443, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/web.py", line 61, in get
+    result = func(self.get_query_arguments)
+  File "/home/emptyset/Studio/dHydra-dev/dHydra/Worker/Monitor/Controller.py", line 33, in get_alive_workers
+    "res"       : json.dumps( alive_workers ),
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/__init__.py", line 230, in dumps
+    return _default_encoder.encode(obj)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/emptyset/.pyenv/versions/3.5.1/lib/python3.5/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+TypeError: keys must be a string
+2016-08-28 22:33:12,567 - tornado.access - 1946 - ERROR - 500 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 2.96ms
+2016-08-28 22:35:53,041 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:35:53,055 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:35:53,056 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:35:53,058 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:35:57,580 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 1.99ms
+2016-08-28 22:42:49,821 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:42:49,837 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:42:49,839 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:43:00,007 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 1.09ms
+2016-08-28 22:43:14,504 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:43:22,811 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.85ms
+2016-08-28 22:44:11,327 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.90ms
+2016-08-28 22:44:12,767 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.87ms
+2016-08-28 22:44:14,079 - tornado.access - 1946 - INFO - 304 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.63ms
+2016-08-28 22:44:15,424 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 1.24ms
+2016-08-28 22:44:16,922 - tornado.access - 1946 - INFO - 304 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.93ms
+2016-08-28 22:44:18,216 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.64ms
+2016-08-28 22:44:19,799 - tornado.access - 1946 - INFO - 304 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.88ms
+2016-08-28 22:44:21,223 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.76ms
+2016-08-28 22:44:22,654 - tornado.access - 1946 - INFO - 304 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 0.78ms
+2016-08-28 22:44:24,378 - tornado.access - 1946 - INFO - 200 GET /api/Worker/Monitor/get_alive_workers/ (127.0.0.1) 1.19ms
+2016-08-28 22:49:16,696 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:49:16,709 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:49:16,711 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:49:16,713 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:49:17,300 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 2.65ms
+2016-08-28 22:49:17,308 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 2.74ms
+2016-08-28 22:49:17,309 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 0.61ms
+2016-08-28 22:49:17,311 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 1.22ms
+2016-08-28 22:49:17,311 - tornado.access - 1946 - INFO - 304 GET /static/css/font-awesome.min.css (127.0.0.1) 0.35ms
+2016-08-28 22:49:35,141 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 0.54ms
+2016-08-28 22:49:35,149 - tornado.access - 1946 - INFO - 200 GET /static/css/bootstrap.min.css (127.0.0.1) 0.80ms
+2016-08-28 22:49:35,151 - tornado.access - 1946 - INFO - 200 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 0.57ms
+2016-08-28 22:49:35,151 - tornado.access - 1946 - INFO - 200 GET /static/css/font-awesome.min.css (127.0.0.1) 0.45ms
+2016-08-28 22:49:35,152 - tornado.access - 1946 - INFO - 200 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 0.79ms
+2016-08-28 22:49:35,293 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.37ms
+2016-08-28 22:49:36,966 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 0.54ms
+2016-08-28 22:49:53,390 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 0.53ms
+2016-08-28 22:49:56,408 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:49:56,422 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:49:56,424 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:49:56,426 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:49:58,074 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 4.57ms
+2016-08-28 22:50:19,450 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:50:19,464 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:50:19,466 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:50:19,468 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:50:24,350 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 2.63ms
+2016-08-28 22:54:10,764 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:54:10,778 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:54:10,780 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:54:10,782 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:54:15,551 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 2.62ms
+2016-08-28 22:54:15,562 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 3.77ms
+2016-08-28 22:54:16,696 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.36ms
+2016-08-28 22:59:28,595 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:59:28,608 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 22:59:28,610 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 22:59:28,613 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 22:59:33,865 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 3.07ms
+2016-08-28 22:59:33,875 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 3.73ms
+2016-08-28 22:59:35,529 - tornado.access - 1946 - INFO - 200 GET /static/css/Semantic-UI/themes/default/assets/fonts/icons.woff2 (127.0.0.1) 0.80ms
+2016-08-28 23:00:05,117 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:00:05,131 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 23:00:05,133 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 23:00:05,136 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:00:08,080 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 3.18ms
+2016-08-28 23:02:42,724 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 0.88ms
+2016-08-28 23:02:46,016 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:02:46,030 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 23:02:46,032 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 23:02:46,034 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:02:47,966 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 3.76ms
+2016-08-28 23:04:58,716 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:04:58,730 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 23:04:58,732 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 23:04:58,733 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:05:00,132 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 3.52ms
+2016-08-28 23:05:00,145 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 3.92ms
+2016-08-28 23:05:43,698 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:05:43,712 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-28 23:05:43,714 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-28 23:05:43,715 - DB - 39 - INFO - Trying to connect to redis
+2016-08-28 23:05:46,074 - tornado.access - 1946 - INFO - 200 GET /Worker/Monitor/index (127.0.0.1) 3.89ms
+2016-08-28 23:14:24,971 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 0.93ms
+2016-08-28 23:14:24,984 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 5.58ms
+2016-08-28 23:14:26,174 - tornado.access - 1946 - INFO - 200 GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 0.80ms
+2016-08-29 06:08:26,700 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 0.54ms
+2016-08-29 06:08:26,767 - tornado.access - 1946 - INFO - 304 GET /static/css/bootstrap.min.css (127.0.0.1) 0.92ms
+2016-08-29 06:08:26,769 - tornado.access - 1946 - INFO - 304 GET /static/js/jquery-3.0.0.min.js (127.0.0.1) 0.69ms
+2016-08-29 06:08:26,770 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 0.48ms
+2016-08-29 06:08:28,017 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/themes/default/assets/fonts/icons.woff2 (127.0.0.1) 0.66ms
+2016-08-29 06:18:10,670 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 0.58ms
+2016-08-29 06:18:10,677 - tornado.access - 1946 - INFO - 304 GET /static/js/canvas-nest.min.js (127.0.0.1) 0.51ms
+2016-08-29 06:18:10,678 - tornado.access - 1946 - INFO - 304 GET /static/js/typed.js (127.0.0.1) 0.43ms
+2016-08-29 06:18:17,727 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 0.70ms
+2016-08-29 06:18:47,261 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 0.69ms
+2016-08-29 06:19:52,486 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:19:52,502 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:19:52,504 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:19:52,509 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:20:04,125 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 3.12ms
+2016-08-29 06:21:35,950 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 1.04ms
+2016-08-29 06:22:38,837 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:22:38,858 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:22:38,860 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:22:43,736 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:23:01,892 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:23:01,899 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:23:01,901 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:23:39,534 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:23:48,697 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:23:48,771 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:23:48,773 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:24:01,152 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:24:18,895 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:24:18,920 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:24:18,921 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:24:22,311 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:25:13,261 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:25:13,275 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:25:13,277 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:25:13,279 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:25:18,141 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:25:18,190 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:25:18,193 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:25:22,249 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:25:33,479 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:25:33,518 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:25:33,520 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:25:39,557 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:33:12,691 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:33:12,706 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:33:12,706 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:33:12,707 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:33:12,709 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:33:15,531 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:33:15,617 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 06:33:15,617 - DB - 28 - INFO - 尝试连接到Mongodb
+2016-08-29 06:33:15,619 - DB - 31 - INFO - 已经成功连接到mongodb
+2016-08-29 06:33:20,402 - DB - 39 - INFO - Trying to connect to redis
+2016-08-29 08:26:21,113 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 2.84ms
+2016-08-29 08:26:21,125 - tornado.access - 1946 - INFO - 304 GET /static/css/Semantic-UI/semantic.min.css (127.0.0.1) 4.08ms
+2016-08-29 08:26:21,203 - tornado.access - 1946 - WARNING - 404 GET /favicon.ico (127.0.0.1) 0.52ms
+2016-08-29 08:26:35,913 - tornado.access - 1946 - INFO - 304 GET /Worker/Monitor/index (127.0.0.1) 1.59ms
+2016-08-29 08:29:26,660 - tornado.access - 1946 - INFO - 304 GET / (127.0.0.1) 1.65ms

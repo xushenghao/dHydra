@@ -21,7 +21,7 @@ def terminate_worker( nickname = None, pid = None):
         while worker_dict[nickname]._popen is None and i < 30:
             time.sleep(0.1)
             i += 1
-        worker_dict[nickname]._popen.wait(0.001)
+        worker_dict[nickname]._popen.wait(0.1)
         worker_dict.pop(nickname)
 
 def get_workers_info( redis_cli = None, by = "nickname", nickname = None, worker_name = None ):
@@ -42,7 +42,7 @@ def get_pid_by_nickname( redis_cli = None, nickname = None ):
         redis_cli = __redis__
     workers_info = get_workers_info( redis_cli = __redis__, nickname = nickname )
     if len(workers_info) == 1:
-        return int( workers_info[0][b"pid"].decode("utf-8") )
+        return int( workers_info[0]["pid"] )
     else:
         print("Worker is not Unique.")
         return 0
@@ -58,7 +58,7 @@ def __command_handler__(msg_command):
         }
     """
     print(msg_command)
-    msg_command = json.loads( msg_command.decode("utf-8").replace("\'","\"") )
+    msg_command = json.loads( msg_command.replace("\'","\"") )
     if msg_command["type"] == "sys":
         str_kwargs = ""
         for k in msg_command["kwargs"].keys():

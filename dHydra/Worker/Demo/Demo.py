@@ -30,7 +30,7 @@ class Demo(Worker):
         <nickname> is the customized (unique) name, which can be configured when
         the worker is initialized.
 
-        self.publish is the method for publishing data to the channel.
+        "self.publish" is the method for publishing data to the channel.
         """
         import time
         i = 0

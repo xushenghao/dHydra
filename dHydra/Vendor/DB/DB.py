@@ -37,7 +37,7 @@ class DB(Vendor):
 	def get_redis(self, host="127.0.0.1", port = 6379):
 		try:
 			self.logger.info("Trying to connect to redis")
-			self.redis = redis.Redis(host=host, port = port)
+			self.redis = redis.StrictRedis(decode_responses = True, host = host, port = port)
 			self.redis.client_list()
 			return self.redis
 		except:

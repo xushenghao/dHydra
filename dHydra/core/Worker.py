@@ -90,7 +90,7 @@ class Worker(multiprocessing.Process):
 		}
 		"""
 		print(msg_command)
-		msg_command = json.loads( msg_command.decode("utf-8").replace("\'","\"") )
+		msg_command = json.loads( msg_command.replace("\'","\"") )
 		if msg_command["type"] == "sys":
 			str_kwargs = ""
 			for k in msg_command["kwargs"].keys():
@@ -112,7 +112,7 @@ class Worker(multiprocessing.Process):
 		"""
 		# 检测redis, mongodb连接
 		try:
-			self.__redis__ = redis.Redis(host = '127.0.0.1', port = 6379)
+			self.__redis__ = get_vendor("DB").get_redis()
 			self.__redis__.client_list()
 			self.__listener__ = self.__redis__.pubsub()
 			self.__listener__.subscribe(["dHydra"])
